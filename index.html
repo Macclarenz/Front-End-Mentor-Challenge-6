@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+  <title>Frontend Mentor | Sunnyside agency landing page</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution {
+      font-size: 11px;
+      text-align: center;
+    }
+
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <div class="nav-container header-container">
+      <nav>
+        <img src="./images/logo.svg" alt="Sunnyside logo" class="header-logo">
+        <button onclick="navToggle()" class = 'nav-toggle'><img src="./images/icon-hamburger.svg" alt="nav hamburger icon" class="nav-burger"></button>
+        <ul class="nav-list">
+          <li><a href="">About</a></li>
+          <li><a href="">Services</a></li>
+          <li><a href="">Projects</a></li>
+          <li><a href="" id = 'nav-contact'>Contact</a></li>
+        </ul>
+      </nav>
+      <div class="hero-container">
+        <h1>We are creatives</h1>
+        <a href="#main"><img class = 'hero-arrow-link' src="./images/icon-arrow-down.svg" alt="Arrow down moving up and down"></a>
+      </div>
+    </div>
+  </header>
+
+  <main id = 'main'>
+    <div class="main-content main-content-1">
+      <div class="main-pic-container">
+        <img src="./images/desktop/image-transform.jpg" alt="white egg on a yellow background" srcset="./images/mobile/image-transform.jpg 376w, 
+                     ./images/desktop/image-transform.jpg 720w" sizes='(max-width: 420px) 376px, 720px'>
+      </div>
+      <section class="main-text">
+        <h1>Transform your brand</h1>
+        <p>
+          We are a full-service creative agency specializing in helping brands grow fast.
+          Engage your clients through compelling visuals that do most of the marketing for you.
+        </p>
+        <a href="">Learn more</a>
+      </section>
+    </div>
+
+    <div class="main-content main-content-2">
+      <div class="main-pic-container">
+        <img src="./images/desktop/image-stand-out.jpg" alt="a pink wine glass-like" srcset="./images/mobile/image-stand-out.jpg 376w, 
+                     ./images/desktop/image-stand-out.jpg 720w" sizes='(max-width: 420px) 376px, 720px'>
+      </div>
+      <section class="main-text">
+        <h1>Stand out to the right audience</h1>
+        <p>
+          Using a collaborative formula of designers, researchers, photographers, videographers, and copywriters, we’ll
+          build
+          and extend your brand in digital places.
+        </p>
+        <a href="">Learn more</a>
+      </section>
+    </div>
+
+    <div class="second-main-container">
+      <div class="second-main-content second-main-content-1">
+        <section class="second-main-text">
+          <h1>Graphic design</h1>
+          <p>
+            Great design makes you memorable. We deliver artwork that underscores your brand message and captures potential
+            clients’ attention.
+          </p>
+        </section>
+      </div>
+      <div class="second-main-content second-main-content-2">
+        <section class="second-main-text">
+          <h1>Photography</h1>
+          <p>Increase your credibility by getting the most stunning, high-quality photos that improve your business image.
+          </p>
+        </section>
+      </div>
+    </div>
+
+    <div class="ct-container">
+
+      <h2>Client testimonials</h2>
+
+      <div class="ct-smaller-container">
+        <div class="ct-content">
+          <img src="./images/image-emily.jpg" alt="profile picture">
+          <p>We put our trust in Sunnyside and they delivered, making sure our needs were met and deadlines were always
+            hit.</p>
+          <section class="ct-author">
+            <h2>Emily R.</h2>
+            <p>Marketing Director</p>
+          </section>
+        </div>
+        <div class="ct-content">
+          <img src="./images/image-thomas.jpg" alt="profile picture">
+          <p>
+            Sunnyside’s enthusiasm coupled with their keen interest in our brand’s success made it a satisfying and
+            enjoyable
+            experience.
+          </p>
+          <section class="ct-author">
+            <h2>Thomas S.</h2>
+            <p>Chief Operating Officer</p>
+          </section>
+        </div>
+        <div class="ct-content">
+          <img src="./images/image-jennie.jpg" alt="profile picture">
+          <p>Incredible end result! Our sales increased over 400% when we worked with Sunnyside. Highly recommended!</p>
+          <section class="ct-author">
+            <h2>Jennie F.</h2>
+            <p>Business Owner</p>
+          </section>
+        </div>
+      </div>
+
+    </div>
+  </main>
+
+  <div class="gallery-content">
+
+    <div class="galler-container-1 gallery-container">
+      <img src="./images/desktop/image-gallery-milkbottles.jpg" 
+      srcset="./images/mobile/image-gallery-milkbottles.jpg 376w, 
+              ./images/desktop/image-gallery-milkbottles.jpg 720w" 
+      sizes='(max-width: 420px) 376px, 720px' alt="milkbottles">
+    </div>
+
+    <div class="galler-container-2 gallery-container">
+      <img src="./images/desktop/image-gallery-orange.jpg" 
+      srcset="./images/mobile/image-gallery-orange.jpg 376w, 
+              ./images/desktop/image-gallery-orange.jpg 720w" 
+      sizes='(max-width: 420px) 376px, 720px' alt="orange on a 2 layered plate">
+    </div>
+
+    <div class="galler-container-3 gallery-container">
+      <img src="./images/desktop/image-gallery-cone.jpg" 
+      srcset="./images/mobile/image-gallery-cone.jpg 376w, 
+              ./images/desktop/image-gallery-cone.jpg 720w" 
+      sizes='(max-width: 420px) 376px, 720px' alt="ice cream cone">
+    </div>
+
+    <div class="galler-container-4 gallery-container">
+      <img src="./images/desktop/image-gallery-sugarcubes.jpg" 
+      srcset="./images/mobile/image-gallery-sugarcubes.jpg 376w, 
+              ./images/desktop/image-gallery-sugarcubes.jpg 720w" 
+      sizes='(max-width: 420px) 376px, 720px' alt="tones of sugarcubes">
+    </div>
+
+  </div>
+
+  <footer>
+    <div class="footer-container container">
+      <img src="./images/logo.svg" alt="sunnyside logo" class="footer-logo">
+      <ul class = 'footer-links'>
+        <li>
+          <a href="">About</a>
+        </li>
+        <li>
+          <a href="">Services</a>
+        </li>
+        <li>
+          <a href="">Projects</a>
+        </li>
+        <li>
+          <a href="">Contact</a>
+        </li>
+      </ul>
+      <ul class="footer-social-links">
+        <li><a href=""><img src="./images/icon-facebook.svg" alt="facebook icon link"></a></li>
+        <li><a href=""><img src="./images/icon-instagram.svg" alt="instagram icon link"></a></li>
+        <li><a href=""><img src="./images/icon-twitter.svg" alt="twitter icon link"></a></li>
+        <li><a href=""><img src="./images/icon-pinterest.svg" alt="pinterest icon link"></a></li>
+      </ul>
+    </div>
+  </footer>
+
+  <script src = 'main.js'></script>
+
+  <!-- <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+    Coded by <a href="#">Your Name Here</a>.
+  </div> -->
+</body>
+
+</html>
